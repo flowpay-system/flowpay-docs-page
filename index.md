@@ -4,8 +4,9 @@ title: Início
 ---
 
 <div class="home-hero">
+<img src="{{ '/assets/flowpay-header-logo.webp' | relative_url }}" alt="FlowPay" class="hero-logo">
 
-# FlowPay App — Central de Ajuda
+# Central de Ajuda
 
 Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 

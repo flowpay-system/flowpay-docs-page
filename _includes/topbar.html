@@ -3,6 +3,10 @@
     <span></span><span></span><span></span>
   </button>
 
+  <a href="{{ '/' | relative_url }}" class="topbar-brand">
+    <img src="{{ '/assets/flowpay-icon.webp' | relative_url }}" alt="FlowPay" class="topbar-icon">
+  </a>
+
   <div class="topbar-breadcrumb">
     {% if page.section %}<span class="breadcrumb-section">{{ page.section }}</span><span class="breadcrumb-sep">›</span>{% endif %}
     <span class="breadcrumb-page">{{ page.title | default: "Início" }}</span>

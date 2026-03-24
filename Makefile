@@ -26,12 +26,14 @@ help:
 check-ruby:
 	@ruby -e 'required = Gem::Version.new("$(RUBY_MIN)"); current = Gem::Version.new(RUBY_VERSION); abort("Ruby >= $(RUBY_MIN) obrigatorio. Atual: #{RUBY_VERSION}. Instale Ruby 3.x antes de usar Jekyll.") if current < required; puts "Ruby OK: #{RUBY_VERSION}"'
 
-check-bundler:
-	@ruby -rbundler -e 'required = Gem::Version.new("$(BUNDLER_MIN)"); current = Gem::Version.new(Bundler::VERSION); abort("Bundler >= $(BUNDLER_MIN) obrigatorio. Atual: #{Bundler::VERSION}. Rode: gem install bundler") if current < required; puts "Bundler OK: #{Bundler::VERSION}"'
-
 doctor: check-ruby check-bundler
 	@command -v npx >/dev/null 2>&1 || { echo "npx nao encontrado. Instale Node.js para lint e formatacao."; exit 1; }
 	@echo "npx OK"
+
+check: lint format-check
+
+check-bundler:
+	@ruby -rbundler -e 'required = Gem::Version.new("$(BUNDLER_MIN)"); current = Gem::Version.new(Bundler::VERSION); abort("Bundler >= $(BUNDLER_MIN) obrigatorio. Atual: #{Bundler::VERSION}. Rode: gem install bundler") if current < required; puts "Bundler OK: #{Bundler::VERSION}"'
 
 install: check-ruby check-bundler
 	bundle install
@@ -46,12 +48,12 @@ clean:
 	rm -rf $(CLEAN_PATHS)
 
 lint:
-	npx --yes markdownlint-cli2 $(MD_GLOBS)
+	pnpm dlx markdownlint-cli2 $(MD_GLOBS)
 
 format-check:
-	npx --yes prettier@3.8.1 --check $(FMT_GLOBS)
+	pnpm dlx prettier@3.8.1 --check $(FMT_GLOBS)
 
 format:
-	npx --yes prettier@3.8.1 --write $(FMT_GLOBS)
+	pnpm dlx prettier@3.8.1 --write $(FMT_GLOBS)
 
-check: lint format-check
+

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/flowpay-icon.webp' | relative_url }}" type="image/webp">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
     </main>
 
     <footer class="site-footer">
+      <img src="{{ '/assets/flowpay-icon.webp' | relative_url }}" alt="FlowPay" class="footer-icon">
       <span>FlowPay App — Central de Ajuda</span>
       <span class="footer-sep">·</span>
       <span>Versão {{ site.version | default: "1.0" }}</span>
