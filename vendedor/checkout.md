@@ -8,7 +8,8 @@ section: Vendedor
 
 # Receber pagamentos
 
-Depois do acesso e da configuração inicial, o próximo passo é criar checkouts para cobrar seus clientes.
+Depois do acesso e da configuração inicial, o próximo passo é criar checkouts para cobrar seus
+clientes.
 
 ---
 
@@ -16,28 +17,28 @@ Depois do acesso e da configuração inicial, o próximo passo é criar checkout
 
 No bloco `Novo link`, preencha:
 
-1. `Título`
-2. `Descrição`
-3. `Valor em BRL`
-4. método de pagamento
+1.  `Título`
+2.  `Descrição`
+3.  `Valor em BRL`
+4.  método de pagamento
 
 Hoje o fluxo principal é `PIX`.
 
 ### Campos do formulário
 
-| Campo | Descrição |
-|---|---|
-| `Título` | nome do produto, serviço ou cobrança |
-| `Descrição` | contexto curto para o cliente |
-| `Valor em BRL` | valor da cobrança |
-| `PIX` | método de pagamento ativo |
-| `Cripto` | aparece como `Em breve` |
+| Campo          | Descrição                            |
+| -------------- | ------------------------------------ |
+| `Título`       | nome do produto, serviço ou cobrança |
+| `Descrição`    | contexto curto para o cliente        |
+| `Valor em BRL` | valor da cobrança                    |
+| `PIX`          | método de pagamento ativo            |
+| `Cripto`       | aparece como `Em breve`              |
 
 ### Gerar o link
 
-1. Preencha os campos
-2. Clique em `Gerar link`
-3. Aguarde a confirmação do sistema
+1.  Preencha os campos
+2.  Clique em `Gerar link`
+3.  Aguarde a confirmação do sistema
 
 Depois disso, o app exibe:
 
@@ -68,12 +69,12 @@ O checkout público fica em uma rota como `/checkout/{button_id}`.
 
 Esse é o fluxo que o cliente percorre:
 
-1. abre o link
-2. informa nome
-3. informa e-mail
-4. clica em `Gerar PIX`
-5. copia o código PIX ou usa o QR Code
-6. aguarda a confirmação do pagamento
+1.  abre o link
+2.  informa nome
+3.  informa e-mail
+4.  clica em `Gerar PIX`
+5.  copia o código PIX ou usa o QR Code
+6.  aguarda a confirmação do pagamento
 
 ### O que o checkout mostra para o cliente
 
@@ -84,7 +85,9 @@ Depois da geração do PIX, o checkout mostra:
 - status da cobrança
 - contagem regressiva quando houver expiração
 
-> O QR Code tem tempo limitado de uso. **[CONFIRMAR COM BACKEND: prazo de expiração do QR PIX]** — informar aqui o prazo exato (provavelmente 30 minutos, padrão PIX). Após a expiração, o cliente deve retornar ao checkout e gerar um novo QR Code.
+> O QR Code tem tempo limitado de uso. **[CONFIRMAR COM BACKEND: prazo de expiração do QR PIX]** —
+> informar aqui o prazo exato (provavelmente 30 minutos, padrão PIX). Após a expiração, o cliente
+> deve retornar ao checkout e gerar um novo QR Code.
 
 ---
 
@@ -99,11 +102,11 @@ Na área `Links ativos`, cada checkout criado mostra:
 
 Para cada link, existem três ações:
 
-| Ação | Descrição |
-|---|---|
-| `Abrir` | abre o checkout público |
-| `Copiar link` | copia a URL pública |
-| `X` | remove o link |
+| Ação          | Descrição               |
+| ------------- | ----------------------- |
+| `Abrir`       | abre o checkout público |
+| `Copiar link` | copia a URL pública     |
+| `X`           | remove o link           |
 
 ---
 
@@ -133,15 +136,15 @@ Para cada link, existem três ações:
 
 ## FAQ sobre criação e compartilhamento
 
-#### Posso cobrar qualquer valor?
+### Posso cobrar qualquer valor?
 
 Sim, desde que o checkout seja criado com o valor desejado no dashboard.
 
-#### Posso apagar um link criado?
+### Posso apagar um link criado?
 
 Sim. Use a ação `X` na área de links ativos.
 
-#### O cliente precisa ter conta no FlowPay?
+### O cliente precisa ter conta no FlowPay?
 
 Não. O checkout público foi desenhado para o cliente final acessar pelo link.
 

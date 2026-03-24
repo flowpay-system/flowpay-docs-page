@@ -45,16 +45,20 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 
 A sequência recomendada para novos vendedores:
 
-1. [Criar e acessar sua conta](/vendedor/acesso) — cadastro em flowpay.cash/registro e login via link mágico
-2. [Configurar sua chave PIX](/vendedor/configuracao) — necessária antes de solicitar saques
-3. [Criar checkouts e receber pagamentos](/vendedor/checkout) — gerar links e compartilhar com clientes
-4. [Acompanhar métricas e transações](/vendedor/pagamentos) — dashboard operacional
-5. [Solicitar saque](/vendedor/saque) — transferência para sua chave PIX
+1.  [Criar e acessar sua conta](/vendedor/acesso) — cadastro em flowpay.cash/registro e login via
+    link mágico
+2.  [Configurar sua chave PIX](/vendedor/configuracao) — necessária antes de solicitar saques
+3.  [Criar checkouts e receber pagamentos](/vendedor/checkout) — gerar links e compartilhar com
+    clientes
+4.  [Acompanhar métricas e transações](/vendedor/pagamentos) — dashboard operacional
+5.  [Solicitar saque](/vendedor/saque) — transferência para sua chave PIX
 
 ---
 
 ## Mensagens e validações
 
-Cada seção deste manual possui um bloco dedicado de **Mensagens do sistema** e **Validações**, documentando os estados esperados e os erros possíveis em cada etapa.
+Cada seção deste manual possui um bloco dedicado de **Mensagens do sistema** e **Validações**,
+documentando os estados esperados e os erros possíveis em cada etapa.
 
-Se você estiver integrando o FlowPay ao seu workflow de suporte, esses blocos são a referência direta para mapear respostas do sistema ao comportamento esperado.
+Se você estiver integrando o FlowPay ao seu workflow de suporte, esses blocos são a referência
+direta para mapear respostas do sistema ao comportamento esperado.

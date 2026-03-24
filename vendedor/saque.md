@@ -8,7 +8,8 @@ section: Vendedor
 
 # Sacar recebimentos
 
-O fluxo financeiro do vendedor une três elementos: saldo disponível, chave PIX cadastrada e solicitação de saque.
+O fluxo financeiro do vendedor une três elementos: saldo disponível, chave PIX cadastrada e
+solicitação de saque.
 
 ---
 
@@ -16,23 +17,25 @@ O fluxo financeiro do vendedor une três elementos: saldo disponível, chave PIX
 
 Na área `Financeiro`, o app exibe:
 
-| Campo | Descrição |
-|---|---|
-| Disponível bruto | saldo total antes da taxa |
-| Taxa aplicada | percentual deduzido pelo FlowPay |
-| Valor líquido a receber | valor após a taxa |
-| Valor já sacado | total transferido até o momento |
-| Valor em processamento | saques em andamento, quando existir |
+| Campo                   | Descrição                           |
+| ----------------------- | ----------------------------------- |
+| Disponível bruto        | saldo total antes da taxa           |
+| Taxa aplicada           | percentual deduzido pelo FlowPay    |
+| Valor líquido a receber | valor após a taxa                   |
+| Valor já sacado         | total transferido até o momento     |
+| Valor em processamento  | saques em andamento, quando existir |
 
-> A taxa é individual por conta e definida pelo FlowPay. O percentual exato fica visível na área `Financeiro` do painel, ao lado do saldo disponível. O valor líquido já considera a taxa descontada antes do saque.
+> A taxa é individual por conta e definida pelo FlowPay. O percentual exato fica visível na área
+> `Financeiro` do painel, ao lado do saldo disponível. O valor líquido já considera a taxa
+> descontada antes do saque.
 
 ---
 
 ## Solicitar saque
 
-1. Confira o saldo disponível
-2. Informe um valor (mínimo R$ 1,00) ou deixe em branco para sacar tudo
-3. Clique em `Sacar agora`
+1.  Confira o saldo disponível
+2.  Informe um valor (mínimo R$ 1,00) ou deixe em branco para sacar tudo
+3.  Clique em `Sacar agora`
 
 Antes do envio, o sistema mostra uma previsão com:
 
@@ -62,13 +65,13 @@ Na seção `Histórico`, você acompanha:
 
 ### Status possíveis
 
-| Status | Significado |
-|---|---|
-| Aguardando | saque recebido, aguardando processamento |
-| Em transferência | saque em curso para a chave PIX informada |
-| Recebido | transferência concluída |
-| Falhou | erro no processamento — entre em contato com o suporte |
-| Cancelado | saque cancelado pelo sistema |
+| Status           | Significado                                            |
+| ---------------- | ------------------------------------------------------ |
+| Aguardando       | saque recebido, aguardando processamento               |
+| Em transferência | saque em curso para a chave PIX informada              |
+| Recebido         | transferência concluída                                |
+| Falhou           | erro no processamento — entre em contato com o suporte |
+| Cancelado        | saque cancelado pelo sistema                           |
 
 ---
 
@@ -100,11 +103,11 @@ O app bloqueia:
 
 ## FAQ sobre saque
 
-#### O saque cai na hora?
+### O saque cai na hora?
 
 Não. O prazo informado no app é de até `1 dia útil (D+1)`.
 
-#### Posso sacar apenas uma parte do saldo?
+### Posso sacar apenas uma parte do saldo?
 
 Sim. Informe o valor desejado. Se deixar em branco, o app tenta sacar tudo.
 

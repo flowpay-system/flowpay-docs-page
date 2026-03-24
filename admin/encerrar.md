@@ -12,10 +12,11 @@ section: Administrador
 
 ## Como encerrar
 
-1. Clique em `Sair` no painel administrativo
-2. A sessão é encerrada e o sistema redireciona para `https://flowpay.cash`
+1.  Clique em `Sair` no painel administrativo
+2.  A sessão é encerrada e o sistema redireciona para `https://flowpay.cash`
 
-> O logout do administrador é independente do logout do vendedor. Encerrar a sessão admin não afeta sessões de vendedores ativas.
+> O logout do administrador é independente do logout do vendedor. Encerrar a sessão admin não afeta
+> sessões de vendedores ativas.
 
 ---
 

@@ -15,6 +15,12 @@ dist
 build
 out
 *.local
+_site
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+.bundle
+vendor/bundle
 
 # Editor
 .vscode/*
@@ -38,4 +44,3 @@ Thumbs.db
 # Secrets
 *.secrets
 *.mcp
-

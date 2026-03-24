@@ -8,7 +8,8 @@ section: Administrador
 
 # Acessar o painel administrativo
 
-O administrador é o perfil responsável por governar acesso, risco operacional e estado das contas no FlowPay.
+O administrador é o perfil responsável por governar acesso, risco operacional e estado das contas no
+FlowPay.
 
 **Responsabilidades principais:**
 
@@ -29,9 +30,9 @@ Existem dois caminhos:
 
 ## Fazer login como administrador
 
-1. Acesse a tela de admin
-2. Digite a senha de administrador
-3. Clique em `Entrar como Admin`
+1.  Acesse a tela de admin
+2.  Digite a senha de administrador
+3.  Clique em `Entrar como Admin`
 
 Se a autenticação for aceita, a sessão admin é criada e o sistema envia você para `/admin`.
 

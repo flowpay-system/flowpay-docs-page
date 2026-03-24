@@ -8,7 +8,8 @@ section: Vendedor
 
 # Configurar sua conta para receber
 
-Antes de sacar valores, você precisa cadastrar sua chave PIX. Essa etapa faz parte da configuração financeira inicial.
+Antes de sacar valores, você precisa cadastrar sua chave PIX. Essa etapa faz parte da configuração
+financeira inicial.
 
 ---
 
@@ -20,8 +21,8 @@ No dashboard, vá até a área `Financeiro` e localize o bloco `Chave PIX para r
 
 ## Cadastrar ou alterar a chave PIX
 
-1. Digite a chave PIX
-2. Clique em `Salvar`
+1.  Digite a chave PIX
+2.  Clique em `Salvar`
 
 Se já existir uma chave salva, o app exibe a chave ativa e oferece a opção `Alterar`.
 
@@ -59,7 +60,7 @@ Os formatos mais comuns são:
 
 ## FAQ sobre chave PIX
 
-#### O que acontece se eu não tiver chave PIX cadastrada?
+### O que acontece se eu não tiver chave PIX cadastrada?
 
 O saque fica bloqueado até o cadastro da chave.
 

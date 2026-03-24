@@ -14,12 +14,12 @@ section: Administrador
 
 No topo do painel, o admin acompanha:
 
-| Métrica | Descrição |
-|---|---|
-| `Pendentes` | contas aguardando aprovação |
-| `Aprovados` | contas ativas |
-| `Pedidos` | total de solicitações recebidas |
-| `Volume total` | valor agregado movimentado |
+| Métrica        | Descrição                       |
+| -------------- | ------------------------------- |
+| `Pendentes`    | contas aguardando aprovação     |
+| `Aprovados`    | contas ativas                   |
+| `Pedidos`      | total de solicitações recebidas |
+| `Volume total` | valor agregado movimentado      |
 
 ---
 
@@ -52,12 +52,12 @@ A tabela mostra:
 
 Dependendo do status atual, o admin pode:
 
-| Ação | Quando usar |
-|---|---|
-| `Aprovar` | conta pendente validada |
-| `Rejeitar` | conta pendente negada |
+| Ação        | Quando usar                             |
+| ----------- | --------------------------------------- |
+| `Aprovar`   | conta pendente validada                 |
+| `Rejeitar`  | conta pendente negada                   |
 | `Suspender` | conta aprovada com problema operacional |
-| `Reativar` | conta suspensa ou rejeitada reabilitada |
+| `Reativar`  | conta suspensa ou rejeitada reabilitada |
 
 ---
 
@@ -92,17 +92,18 @@ O painel administrativo usa paginação para navegar entre lotes de usuários.
 
 ## FAQ do administrador
 
-#### O que fazer se a lista não carregar?
+### O que fazer se a lista não carregar?
 
 Tente novamente e valide se a sessão admin continua ativa.
 
-#### O admin consegue aprovar e suspender usuários pelo mesmo painel?
+### O admin consegue aprovar e suspender usuários pelo mesmo painel?
 
 Sim. As ações mudam de acordo com o status atual de cada conta.
 
-#### O que fazer se um usuário relata não conseguir acessar o app?
+### O que fazer se um usuário relata não conseguir acessar o app?
 
-Primeiro valide o status da conta no painel admin. Se necessário, ajuste para `APPROVED` e oriente o usuário a solicitar novo link mágico para criar uma sessão limpa.
+Primeiro valide o status da conta no painel admin. Se necessário, ajuste para `APPROVED` e oriente o
+usuário a solicitar novo link mágico para criar uma sessão limpa.
 
 ---
 

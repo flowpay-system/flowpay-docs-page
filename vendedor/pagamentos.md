@@ -16,15 +16,15 @@ Depois que os links estão em circulação, o dashboard vira sua camada de leitu
 
 As métricas principais exibem:
 
-| Métrica | Descrição |
-|---|---|
-| `Total recebido` | soma de todos os pagamentos confirmados |
-| `Vendas pagas` | número de transações pagas |
-| `Ticket médio` | valor médio por transação |
-| `Conversão` | taxa de conversão dos checkouts |
-| `Pendentes` | cobranças geradas ainda não pagas |
-| `Últimos 7 dias` | receita dos últimos 7 dias |
-| `Últimos 30 dias` | receita dos últimos 30 dias |
+| Métrica           | Descrição                               |
+| ----------------- | --------------------------------------- |
+| `Total recebido`  | soma de todos os pagamentos confirmados |
+| `Vendas pagas`    | número de transações pagas              |
+| `Ticket médio`    | valor médio por transação               |
+| `Conversão`       | taxa de conversão dos checkouts         |
+| `Pendentes`       | cobranças geradas ainda não pagas       |
+| `Últimos 7 dias`  | receita dos últimos 7 dias              |
+| `Últimos 30 dias` | receita dos últimos 30 dias             |
 
 Esses dados ajudam a ler desempenho sem precisar abrir relatórios externos.
 
@@ -77,13 +77,14 @@ O checkout exige:
 
 ## FAQ sobre acompanhamento e pagamento
 
-#### O que o cliente precisa preencher para pagar?
+### O que o cliente precisa preencher para pagar?
 
 Nome e e-mail válidos antes da geração do PIX.
 
-#### O pagamento aparece automaticamente no dashboard?
+### O pagamento aparece automaticamente no dashboard?
 
-O dashboard atualiza métricas e transações com refresh automático periódico e também reflete os dados após novas operações.
+O dashboard atualiza métricas e transações com refresh automático periódico e também reflete os
+dados após novas operações.
 
 ---
 

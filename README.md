@@ -4,7 +4,7 @@ Site estático gerado com Jekyll para GitHub Pages.
 
 ## Estrutura
 
-```
+```text
 flowpay-docs/
 ├── _layouts/
 │   └── default.html        # layout principal
@@ -43,6 +43,7 @@ git remote add origin https://github.com/SEU_USER/flowpay-docs.git
 ### 2. Configurar o GitHub Pages
 
 No repositório → **Settings** → **Pages**:
+
 - Source: `Deploy from a branch`
 - Branch: `main` / `root`
 
@@ -51,20 +52,20 @@ No repositório → **Settings** → **Pages**:
 Se o site não estiver na raiz do domínio (ex: `usuario.github.io/flowpay-docs`), adicione:
 
 ```yaml
-baseurl: "/flowpay-docs"
-url: "https://SEU_USER.github.io"
+baseurl: '/flowpay-docs'
+url: 'https://SEU_USER.github.io'
 ```
 
 Se usar domínio customizado (`docs.flowpay.cash`), deixe:
 
 ```yaml
-baseurl: ""
-url: "https://docs.flowpay.cash"
+baseurl: ''
+url: 'https://docs.flowpay.cash'
 ```
 
 E adicione um arquivo `CNAME` na raiz:
 
-```
+```text
 docs.flowpay.cash
 ```
 
@@ -91,7 +92,9 @@ bundle exec jekyll serve
 
 Dois placeholders precisam ser resolvidos com o backend antes da publicação pública:
 
-1. `vendedor/acesso.md` — TTL do link mágico (linha com `[CONFIRMAR COM BACKEND: TTL do link mágico]`)
-2. `vendedor/checkout.md` — prazo de expiração do QR PIX (linha com `[CONFIRMAR COM BACKEND: prazo de expiração do QR PIX]`)
+1.  `vendedor/acesso.md` — TTL do link mágico (linha com
+    `[CONFIRMAR COM BACKEND: TTL do link mágico]`)
+2.  `vendedor/checkout.md` — prazo de expiração do QR PIX (linha com
+    `[CONFIRMAR COM BACKEND: prazo de expiração do QR PIX]`)
 
 Substitua os blocos `> **[CONFIRMAR...]**` pelo prazo confirmado antes de fazer o deploy público.
