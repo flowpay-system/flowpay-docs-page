@@ -14,7 +14,7 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 
 <div class="profile-cards">
 
-<a href="/vendedor/acesso" class="profile-card vendor">
+<a href="{{ "/vendedor/acesso" | relative_url }}" class="profile-card vendor">
   <div class="card-label">Perfil</div>
   <span class="card-title">Vendedor</span>
   <p class="card-desc">Receba pagamentos via PIX, gerencie checkouts e solicite saques.</p>
@@ -27,7 +27,7 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
   </div>
 </a>
 
-<a href="/admin/acesso" class="profile-card admin">
+<a href="{{ "/admin/acesso" | relative_url }}" class="profile-card admin">
   <div class="card-label">Perfil</div>
   <span class="card-title">Administrador</span>
   <p class="card-desc">Governe o acesso de vendedores, aprove contas e monitore o painel.</p>
@@ -46,13 +46,13 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 
 A sequência recomendada para novos vendedores:
 
-1.  [Criar e acessar sua conta](/vendedor/acesso) — cadastro em flowpay.cash/registro e login via
+1.  [Criar e acessar sua conta]({{ "/vendedor/acesso" | relative_url }}) — cadastro em flowpay.cash/registro e login via
     link mágico
-2.  [Configurar sua chave PIX](/vendedor/configuracao) — necessária antes de solicitar saques
-3.  [Criar checkouts e receber pagamentos](/vendedor/checkout) — gerar links e compartilhar com
+2.  [Configurar sua chave PIX]({{ "/vendedor/configuracao" | relative_url }}) — necessária antes de solicitar saques
+3.  [Criar checkouts e receber pagamentos]({{ "/vendedor/checkout" | relative_url }}) — gerar links e compartilhar com
     clientes
-4.  [Acompanhar métricas e transações](/vendedor/pagamentos) — dashboard operacional
-5.  [Solicitar saque](/vendedor/saque) — transferência para sua chave PIX
+4.  [Acompanhar métricas e transações]({{ "/vendedor/pagamentos" | relative_url }}) — dashboard operacional
+5.  [Solicitar saque]({{ "/vendedor/saque" | relative_url }}) — transferência para sua chave PIX
 
 ---
 

@@ -21,11 +21,11 @@ section: Administrador
 ---
 
 <div class="page-nav">
-  <a href="/admin/operacao" class="page-nav-link prev">
+  <a href="{{ "/admin/operacao" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Operar o painel</span>
   </a>
-  <a href="/faq" class="page-nav-link next">
+  <a href="{{ "/faq" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
     <span class="page-nav-title">FAQ geral</span>
   </a>

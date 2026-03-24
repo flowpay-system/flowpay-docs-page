@@ -47,11 +47,11 @@ usuário a solicitar novo link mágico para criar uma sessão limpa.
 ---
 
 <div class="page-nav">
-  <a href="/admin/encerrar" class="page-nav-link prev">
+  <a href="{{ "/admin/encerrar" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Encerrar sessão</span>
   </a>
-  <a href="/" class="page-nav-link next">
+  <a href="{{ "/" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">↑ Início</span>
     <span class="page-nav-title">Voltar ao início</span>
   </a>

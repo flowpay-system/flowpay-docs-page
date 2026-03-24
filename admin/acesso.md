@@ -55,11 +55,11 @@ Se a autenticação for aceita, a sessão admin é criada e o sistema envia voc�
 ---
 
 <div class="page-nav">
-  <a href="/vendedor/faq" class="page-nav-link prev">
+  <a href="{{ "/vendedor/faq" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">FAQ do vendedor</span>
   </a>
-  <a href="/admin/operacao" class="page-nav-link next">
+  <a href="{{ "/admin/operacao" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
     <span class="page-nav-title">Operar o painel</span>
   </a>

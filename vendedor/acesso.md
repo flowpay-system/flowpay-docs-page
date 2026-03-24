@@ -109,11 +109,11 @@ Normalmente significa token inválido, expirado ou problema temporário de comun
 ---
 
 <div class="page-nav">
-  <a href="/" class="page-nav-link prev">
+  <a href="{{ "/" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Início</span>
   </a>
-  <a href="/vendedor/configuracao" class="page-nav-link next">
+  <a href="{{ "/vendedor/configuracao" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
     <span class="page-nav-title">Configurar PIX</span>
   </a>

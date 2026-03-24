@@ -67,11 +67,11 @@ O saque fica bloqueado até o cadastro da chave.
 ---
 
 <div class="page-nav">
-  <a href="/vendedor/acesso" class="page-nav-link prev">
+  <a href="{{ "/vendedor/acesso" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Acessar a conta</span>
   </a>
-  <a href="/vendedor/checkout" class="page-nav-link next">
+  <a href="{{ "/vendedor/checkout" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
     <span class="page-nav-title">Receber pagamentos</span>
   </a>

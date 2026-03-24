@@ -114,11 +114,11 @@ Sim. Informe o valor desejado. Se deixar em branco, o app tenta sacar tudo.
 ---
 
 <div class="page-nav">
-  <a href="/vendedor/pagamentos" class="page-nav-link prev">
+  <a href="{{ "/vendedor/pagamentos" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Acompanhar pagamentos</span>
   </a>
-  <a href="/vendedor/faq" class="page-nav-link next">
+  <a href="{{ "/vendedor/faq" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
     <span class="page-nav-title">FAQ do vendedor</span>
   </a>

@@ -89,11 +89,11 @@ dados após novas operações.
 ---
 
 <div class="page-nav">
-  <a href="/vendedor/checkout" class="page-nav-link prev">
+  <a href="{{ "/vendedor/checkout" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Receber pagamentos</span>
   </a>
-  <a href="/vendedor/saque" class="page-nav-link next">
+  <a href="{{ "/vendedor/saque" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
     <span class="page-nav-title">Sacar recebimentos</span>
   </a>
