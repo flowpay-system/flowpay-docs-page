@@ -1,0 +1,16 @@
+<header class="topbar">
+  <button class="menu-toggle" onclick="openSidebar()" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="topbar-breadcrumb">
+    {% if page.section %}<span class="breadcrumb-section">{{ page.section }}</span><span class="breadcrumb-sep">›</span>{% endif %}
+    <span class="breadcrumb-page">{{ page.title | default: "Início" }}</span>
+  </div>
+
+  <div class="topbar-actions">
+    {% if page.url != "/" %}
+    <a href="{{ '/' | relative_url }}" class="topbar-home">← Início</a>
+    {% endif %}
+  </div>
+</header>

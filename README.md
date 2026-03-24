@@ -1,43 +1,97 @@
-# NEØ Template
+# FlowPay Docs — Central de Ajuda
 
-Minimal baseline for new repositories.
+Site estático gerado com Jekyll para GitHub Pages.
 
-This template is designed to give each new project a clean start with a few practical defaults:
+## Estrutura
 
-- sane Git and editor defaults
-- lightweight documentation
-- basic CI for Markdown and formatting
-- Dependabot for dependency and workflow updates
+```
+flowpay-docs/
+├── _layouts/
+│   └── default.html        # layout principal
+├── _includes/
+│   ├── sidebar.html         # navegação lateral
+│   └── topbar.html          # barra superior
+├── assets/
+│   ├── css/main.css         # estilos
+│   └── js/main.js           # sidebar mobile + busca
+├── vendedor/
+│   ├── acesso.md
+│   ├── configuracao.md
+│   ├── checkout.md
+│   ├── pagamentos.md
+│   ├── saque.md
+│   └── faq.md
+├── admin/
+│   ├── acesso.md
+│   ├── operacao.md
+│   └── encerrar.md
+├── index.md
+├── faq.md
+├── _config.yml
+└── Gemfile
+```
 
-## What stays
+## Deploy no GitHub Pages
 
-- `.editorconfig`, `.gitignore`, `.gitattributes`
-- `.github/workflows/ci.yml`
-- `.github/dependabot.yml`
-- `README.md`, `CONTRIBUTING.md`, `SECURITY.md`
-- `standards/README.md`
-- `standards/readme.template.md`
+### 1. Criar o repositório
 
-## What this template avoids
+```bash
+git init
+git remote add origin https://github.com/SEU_USER/flowpay-docs.git
+```
 
-- environment-specific setup
-- organization-heavy governance docs
-- fragile automation that depends on repository settings
-- rules that create noise without protecting quality
+### 2. Configurar o GitHub Pages
 
-## How to use
+No repositório → **Settings** → **Pages**:
+- Source: `Deploy from a branch`
+- Branch: `main` / `root`
 
-1.  Create a new repository from this template.
-2.  Update `README.md` with your project scope.
-3.  Adjust or remove `CODEOWNERS`, `PULL_REQUEST_TEMPLATE.md`, and `dependabot.yml` as needed.
-4.  Add project-specific tooling only after the first real need appears.
+### 3. Ajustar o `_config.yml`
 
-## CI
+Se o site não estiver na raiz do domínio (ex: `usuario.github.io/flowpay-docs`), adicione:
 
-The default CI checks only two things:
+```yaml
+baseurl: "/flowpay-docs"
+url: "https://SEU_USER.github.io"
+```
 
-- Markdown lint for `*.md`
-- Prettier formatting for `*.md`, `*.json`, `*.yml`, `*.yaml`
+Se usar domínio customizado (`docs.flowpay.cash`), deixe:
 
-That is enough for a baseline. Everything else should be earned by the project, not inherited by
-inertia.
+```yaml
+baseurl: ""
+url: "https://docs.flowpay.cash"
+```
+
+E adicione um arquivo `CNAME` na raiz:
+
+```
+docs.flowpay.cash
+```
+
+### 4. Push
+
+```bash
+git add .
+git commit -m "feat: initial docs deploy"
+git push -u origin main
+```
+
+O GitHub Actions faz o build automaticamente. O site fica disponível em 1–2 minutos.
+
+## Rodar localmente
+
+```bash
+gem install bundler
+bundle install
+bundle exec jekyll serve
+# → http://localhost:4000
+```
+
+## Pendências antes de publicar
+
+Dois placeholders precisam ser resolvidos com o backend antes da publicação pública:
+
+1. `vendedor/acesso.md` — TTL do link mágico (linha com `[CONFIRMAR COM BACKEND: TTL do link mágico]`)
+2. `vendedor/checkout.md` — prazo de expiração do QR PIX (linha com `[CONFIRMAR COM BACKEND: prazo de expiração do QR PIX]`)
+
+Substitua os blocos `> **[CONFIRMAR...]**` pelo prazo confirmado antes de fazer o deploy público.
