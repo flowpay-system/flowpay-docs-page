@@ -28,11 +28,6 @@ const searchData = [
   { title: 'Solicitar saque', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'saque solicitar sacar valor mínimo 1 real' },
   { title: 'Status do saque', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'aguardando em transferência recebido falhou cancelado status saque' },
   { title: 'Prazo de saque D+1', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'prazo d+1 dia útil quando cai' },
-  // Admin
-  { title: 'Acessar painel administrativo', section: 'Administrador', url: '/admin/acesso', keywords: 'admin login senha painel administrativo acesso' },
-  { title: 'Aprovar e rejeitar contas', section: 'Administrador', url: '/admin/operacao', keywords: 'aprovar rejeitar suspender reativar conta usuário status' },
-  { title: 'Métricas do painel admin', section: 'Administrador', url: '/admin/operacao', keywords: 'pendentes aprovados volume total pedidos métricas admin' },
-  { title: 'Encerrar sessão admin', section: 'Administrador', url: '/admin/encerrar', keywords: 'logout sair encerrar sessão admin' },
   // FAQ
   { title: 'FAQ do vendedor', section: 'FAQ', url: '/vendedor/faq', keywords: 'perguntas frequentes faq vendedor link mágico chave pix saque' },
   { title: 'FAQ geral', section: 'FAQ', url: '/faq', keywords: 'faq geral perguntas frequentes dois perfis checkout dashboard' },

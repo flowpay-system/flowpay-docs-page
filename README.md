@@ -21,10 +21,6 @@ flowpay-docs/
 │   ├── pagamentos.md
 │   ├── saque.md
 │   └── faq.md
-├── admin/
-│   ├── acesso.md
-│   ├── operacao.md
-│   └── encerrar.md
 ├── index.md
 ├── faq.md
 ├── _config.yml

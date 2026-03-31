@@ -54,8 +54,8 @@ Confirme o status no checkout do cliente, atualize o dashboard e verifique a lis
     <span class="page-nav-label">← Anterior</span>
     <span class="page-nav-title">Sacar recebimentos</span>
   </a>
-  <a href="{{ "/admin/acesso" | relative_url }}" class="page-nav-link next">
+  <a href="{{ "/faq" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">Próximo →</span>
-    <span class="page-nav-title">Painel administrativo</span>
+    <span class="page-nav-title">FAQ geral</span>
   </a>
 </div>

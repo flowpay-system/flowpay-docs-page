@@ -5,13 +5,9 @@ title: FAQ geral
 
 # FAQ geral
 
-Dúvidas que cobrem os dois perfis do FlowPay App.
+Dúvidas gerais sobre o FlowPay App.
 
 ---
-
-## O FlowPay App é usado apenas por vendedores?
-
-Não. O app possui dois perfis principais: vendedor e administrador.
 
 ## O checkout público faz parte do dashboard?
 
@@ -39,17 +35,17 @@ Confirme o status no checkout do cliente, atualize o dashboard e verifique a lis
 `Últimos pagamentos`. Se ainda não refletir, exporte o CSV atual para conciliação e valide com o
 time de operação.
 
-## O que o admin deve fazer se um usuário relata não conseguir acessar o app?
+## O que fazer quando um usuário relata não conseguir acessar o app?
 
-Primeiro valide o status da conta no painel admin. Se necessário, ajuste para `APPROVED` e oriente o
-usuário a solicitar novo link mágico para criar uma sessão limpa.
+Valide o status da conta no dashboard, confirme se o cadastro já foi aprovado e oriente o usuário a
+solicitar um novo link mágico para criar uma sessão limpa.
 
 ---
 
 <div class="page-nav">
-  <a href="{{ "/admin/encerrar" | relative_url }}" class="page-nav-link prev">
+  <a href="{{ "/vendedor/faq" | relative_url }}" class="page-nav-link prev">
     <span class="page-nav-label">← Anterior</span>
-    <span class="page-nav-title">Encerrar sessão</span>
+    <span class="page-nav-title">FAQ do vendedor</span>
   </a>
   <a href="{{ "/" | relative_url }}" class="page-nav-link next">
     <span class="page-nav-label">↑ Início</span>

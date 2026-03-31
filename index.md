@@ -15,6 +15,7 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 <div class="profile-cards">
 
 <a href="{{ "/vendedor/acesso" | relative_url }}" class="profile-card vendor">
+
   <div class="card-label">Perfil</div>
   <span class="card-title">Vendedor</span>
   <p class="card-desc">Receba pagamentos via PIX, gerencie checkouts e solicite saques.</p>
@@ -27,17 +28,6 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
   </div>
 </a>
 
-<a href="{{ "/admin/acesso" | relative_url }}" class="profile-card admin">
-  <div class="card-label">Perfil</div>
-  <span class="card-title">Administrador</span>
-  <p class="card-desc">Governe o acesso de vendedores, aprove contas e monitore o painel.</p>
-  <div class="card-steps">
-    <span class="card-step">Acesso</span>
-    <span class="card-step">Operação</span>
-    <span class="card-step">Usuários</span>
-  </div>
-</a>
-
 </div>
 
 ---
@@ -46,12 +36,14 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 
 A sequência recomendada para novos vendedores:
 
-1.  [Criar e acessar sua conta]({{ "/vendedor/acesso" | relative_url }}) — cadastro em flowpay.cash/registro e login via
-    link mágico
-2.  [Configurar sua chave PIX]({{ "/vendedor/configuracao" | relative_url }}) — necessária antes de solicitar saques
-3.  [Criar checkouts e receber pagamentos]({{ "/vendedor/checkout" | relative_url }}) — gerar links e compartilhar com
-    clientes
-4.  [Acompanhar métricas e transações]({{ "/vendedor/pagamentos" | relative_url }}) — dashboard operacional
+1.  [Criar e acessar sua conta]({{ "/vendedor/acesso" | relative_url }}) — cadastro em
+    flowpay.cash/registro e login via link mágico
+2.  [Configurar sua chave PIX]({{ "/vendedor/configuracao" | relative_url }}) — necessária antes de
+    solicitar saques
+3.  [Criar checkouts e receber pagamentos]({{ "/vendedor/checkout" | relative_url }}) — gerar links
+    e compartilhar com clientes
+4.  [Acompanhar métricas e transações]({{ "/vendedor/pagamentos" | relative_url }}) — dashboard
+    operacional
 5.  [Solicitar saque]({{ "/vendedor/saque" | relative_url }}) — transferência para sua chave PIX
 
 ---

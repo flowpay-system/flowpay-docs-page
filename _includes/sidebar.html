@@ -48,19 +48,6 @@
     </div>
 
     <div class="nav-group">
-      <span class="nav-group-label nav-group-admin">Administrador</span>
-      <a href="{{ '/admin/acesso' | relative_url }}" class="nav-link {% if page.url contains 'admin/acesso' %}active{% endif %}">
-        Acessar o painel
-      </a>
-      <a href="{{ '/admin/operacao' | relative_url }}" class="nav-link {% if page.url contains 'operacao' %}active{% endif %}">
-        Operar o painel
-      </a>
-      <a href="{{ '/admin/encerrar' | relative_url }}" class="nav-link {% if page.url contains 'encerrar' %}active{% endif %}">
-        Encerrar sessão
-      </a>
-    </div>
-
-    <div class="nav-group">
       <span class="nav-group-label">Geral</span>
       <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url == '/faq/' or page.url == '/faq' %}active{% endif %}">
         FAQ geral
