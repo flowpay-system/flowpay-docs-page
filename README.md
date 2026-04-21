@@ -45,18 +45,25 @@ No repositório → **Settings** → **Pages**:
 
 ### 3. Ajustar o `_config.yml`
 
-Se o site não estiver na raiz do domínio (ex: `usuario.github.io/flowpay-docs`), adicione:
+Se o site não estiver na raiz do domínio (ex: `flowpay-system.github.io/flowpay-docs-page`), adicione:
 
 ```yaml
-baseurl: '/flowpay-docs'
-url: 'https://SEU_USER.github.io'
+baseurl: '/flowpay-docs-page'
+url: 'https://flowpay-system.github.io'
 ```
 
-Se usar domínio customizado (`docs.flowpay.cash`), deixe:
+Se usar o domínio customizado de produção:
 
 ```yaml
 baseurl: ''
 url: 'https://docs.flowpay.cash'
+```
+
+Se precisar voltar para o domínio padrão do GitHub:
+
+```yaml
+baseurl: '/flowpay-docs-page'
+url: 'https://flowpay-system.github.io'
 ```
 
 E adicione um arquivo `CNAME` na raiz:
