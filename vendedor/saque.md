@@ -20,12 +20,12 @@ Na área `Financeiro`, o app exibe:
 | Campo                   | Descrição                           |
 | ----------------------- | ----------------------------------- |
 | Disponível bruto        | saldo total antes da taxa           |
-| Taxa aplicada           | percentual deduzido pelo FlowPay    |
+| Taxa aplicada           | taxa variável por conta             |
 | Valor líquido a receber | valor após a taxa                   |
 | Valor já sacado         | total transferido até o momento     |
 | Valor em processamento  | saques em andamento, quando existir |
 
-> A taxa é individual por conta e definida pelo FlowPay. O percentual exato fica visível na área
+> A taxa é individual por conta e definida pelo FlowPay. O valor exato fica visível na área
 > `Financeiro` do painel, ao lado do saldo disponível. O valor líquido já considera a taxa
 > descontada antes do saque.
 
