@@ -29,7 +29,7 @@ rede e credenciais do perfil usado.
 No dashboard, o status da conta fica visível no cartão de usuário. Se ainda estiver em análise, o
 app informa que o acesso completo não foi liberado.
 
-## Qual é o fluxo esperado quando um pagamento não aparece no dashboard?
+## Qual é o flow esperado quando um pagamento não aparece no dashboard?
 
 Confirme o status no checkout do cliente, atualize o dashboard e verifique a lista de
 `Últimos pagamentos`. Se ainda não refletir, exporte o CSV atual para conciliação e valide com o

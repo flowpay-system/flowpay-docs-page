@@ -8,7 +8,7 @@ section: Vendedor
 
 # Acessar a conta
 
-O acesso ao FlowPay App é exclusivo para contas aprovadas. O fluxo começa no cadastro externo e
+O acesso ao FlowPay App é exclusivo para contas aprovadas. O flow começa no cadastro externo e
 termina no login via link mágico.
 
 ---

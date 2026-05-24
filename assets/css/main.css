@@ -1,9 +1,9 @@
 /* ── TOKENS ─────────────────────────────────────────────── */
 :root {
-  --green: #ff1f8f;
-  --green-dim: #ff1f8f;
-  --green-glow: rgba(0, 204, 119, 0.12);
-  --green-faint: rgba(0, 204, 119, 0.06);
+  --pink: #ff1f8f;
+  --pink-dim: #ff1f8f;
+  --pink-glow: rgba(255, 31, 143, 0.12);
+  --pink-faint: rgba(255, 31, 143, 0.06);
 
   --bg: #0d0d0d;
   --bg-1: #111111;
@@ -153,7 +153,7 @@ body {
 }
 
 .sidebar-search input:focus {
-  border-color: var(--green-dim);
+  border-color: var(--pink-dim);
 }
 
 .sidebar-search input::placeholder {
@@ -219,8 +219,8 @@ body {
 }
 
 .result-title mark {
-  background: var(--green-glow);
-  color: var(--green);
+  background: var(--pink-glow);
+  color: var(--pink);
   border-radius: 2px;
   padding: 0 1px;
 }
@@ -262,7 +262,7 @@ body {
 }
 
 .nav-group-vendor {
-  color: var(--green-dim);
+  color: var(--pink-dim);
 }
 
 .nav-group-admin {
@@ -289,9 +289,9 @@ body {
 }
 
 .nav-link.active {
-  color: var(--green);
-  background: var(--green-faint);
-  border-left-color: var(--green);
+  color: var(--pink);
+  background: var(--pink-faint);
+  border-left-color: var(--pink);
   font-weight: 500;
 }
 
@@ -304,7 +304,7 @@ body {
 }
 
 .nav-link.active .nav-step {
-  color: var(--green-dim);
+  color: var(--pink-dim);
 }
 
 .sidebar-footer {
@@ -325,7 +325,7 @@ body {
   padding: 1px 6px;
   font-family: var(--font-mono);
   font-size: 10px;
-  color: var(--green-dim);
+  color: var(--pink-dim);
 }
 
 /* ── TOPBAR ─────────────────────────────────────────────── */
@@ -408,7 +408,7 @@ body {
 }
 
 .topbar-home:hover {
-  color: var(--green);
+  color: var(--pink);
 }
 
 /* ── CONTENT ────────────────────────────────────────────── */
@@ -450,7 +450,7 @@ body {
   display: block;
   width: 32px;
   height: 2px;
-  background: var(--green);
+  background: var(--pink);
   margin-top: 10px;
 }
 
@@ -496,14 +496,14 @@ body {
 }
 
 .content a {
-  color: var(--green);
+  color: var(--pink);
   text-decoration: none;
-  border-bottom: 1px solid var(--green-dim);
+  border-bottom: 1px solid var(--pink-dim);
   transition: border-color var(--transition);
 }
 
 .content a:hover {
-  border-color: var(--green);
+  border-color: var(--pink);
 }
 
 /* ── LISTS ──────────────────────────────────────────────── */
@@ -520,7 +520,7 @@ body {
 }
 
 .content li::marker {
-  color: var(--green-dim);
+  color: var(--pink-dim);
 }
 
 .content ol li::marker {
@@ -534,7 +534,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.82em;
   background: var(--bg-3);
-  color: var(--green);
+  color: var(--pink);
   border: 1px solid var(--border);
   border-radius: 3px;
   padding: 1px 6px;
@@ -570,8 +570,8 @@ body {
 
 /* ── BLOCKQUOTE / CALLOUT ───────────────────────────────── */
 .content blockquote {
-  border-left: 3px solid var(--green-dim);
-  background: var(--green-faint);
+  border-left: 3px solid var(--pink-dim);
+  background: var(--pink-faint);
   margin: 20px 0;
   padding: 14px 18px;
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -584,7 +584,7 @@ body {
 }
 
 .content blockquote strong {
-  color: var(--green);
+  color: var(--pink);
 }
 
 /* placeholder de backend */
@@ -653,8 +653,8 @@ body {
 }
 
 .page-badge.vendor {
-  color: var(--green-dim);
-  border-color: var(--green-dim);
+  color: var(--pink-dim);
+  border-color: var(--pink-dim);
 }
 
 .page-badge.admin {
@@ -685,8 +685,8 @@ body {
 }
 
 .page-nav-link:hover {
-  border-color: var(--green-dim);
-  background: var(--green-faint);
+  border-color: var(--pink-dim);
+  background: var(--pink-faint);
 }
 
 .page-nav-link.next {
@@ -759,7 +759,7 @@ body {
 }
 
 .profile-card.vendor::before {
-  background: var(--green);
+  background: var(--pink);
 }
 
 .profile-card.admin::before {
@@ -772,7 +772,7 @@ body {
 }
 
 .profile-card:hover.vendor {
-  border-color: var(--green-dim);
+  border-color: var(--pink-dim);
 }
 
 .card-label {
@@ -784,7 +784,7 @@ body {
 }
 
 .profile-card.vendor .card-label {
-  color: var(--green-dim);
+  color: var(--pink-dim);
 }
 
 .profile-card.admin .card-label {

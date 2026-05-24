@@ -8,7 +8,7 @@ section: Vendedor
 
 # Acompanhar pagamentos
 
-Depois que os links estão em circulação, o dashboard vira sua camada de leitura operacional.
+Depois que os links estão em circulação, o dashboard passa a ser sua camada de leitura operacional.
 
 ---
 

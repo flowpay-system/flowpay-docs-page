@@ -8,7 +8,7 @@ section: Vendedor
 
 # Sacar recebimentos
 
-O fluxo financeiro do vendedor une três elementos: saldo disponível, chave PIX cadastrada e
+O flow financeiro do vendedor une três elementos: saldo disponível, chave PIX cadastrada e
 solicitação de saque.
 
 ---

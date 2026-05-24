@@ -22,7 +22,7 @@ No bloco `Novo link`, preencha:
 3.  `Valor em BRL`
 4.  método de pagamento
 
-Hoje o fluxo principal é `PIX`.
+Atualmente, o flow principal é `PIX`.
 
 ### Campos do formulário
 
@@ -67,7 +67,7 @@ O formato de embed é um `iframe`.
 
 O checkout público fica em uma rota como `/checkout/{button_id}`.
 
-Esse é o fluxo que o cliente percorre:
+Esse é o flow que o cliente percorre:
 
 1.  abre o link
 2.  informa nome
