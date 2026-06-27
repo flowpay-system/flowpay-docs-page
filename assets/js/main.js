@@ -25,7 +25,7 @@ const searchData = [
   { title: 'Métricas e dashboard', section: 'Vendedor — Pagamentos', url: '/vendedor/pagamentos', keywords: 'métricas total recebido vendas conversão ticket médio últimos 7 dias' },
   { title: 'Exportar transações CSV', section: 'Vendedor — Pagamentos', url: '/vendedor/pagamentos', keywords: 'exportar csv transações histórico download' },
   { title: 'Resumo financeiro', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'saldo bruto taxa líquido disponível financeiro' },
-  { title: 'Solicitar saque', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'saque solicitar sacar valor mínimo 1 real' },
+  { title: 'Solicitar saque', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'saque solicitar sacar como sacar valor mínimo 1 real' },
   { title: 'Status do saque', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'aguardando em transferência recebido falhou cancelado status saque' },
   { title: 'Prazo de saque D+1', section: 'Vendedor — Saque', url: '/vendedor/saque', keywords: 'prazo d+1 dia útil quando cai' },
   // FAQ
@@ -45,11 +45,12 @@ if (input) {
       return;
     }
 
-    const hits = searchData.filter(item =>
-      item.title.toLowerCase().includes(q) ||
-      item.keywords.toLowerCase().includes(q) ||
-      item.section.toLowerCase().includes(q)
-    ).slice(0, 6);
+    const terms = q.split(/\s+/).filter(Boolean);
+
+    const hits = searchData.filter(item => {
+      const searchSpace = `${item.title} ${item.keywords} ${item.section}`.toLowerCase();
+      return terms.every(term => searchSpace.includes(term));
+    }).slice(0, 6);
 
     if (!hits.length) {
       results.innerHTML = '<div class="search-result-item"><span class="result-title">Nenhum resultado</span></div>';
@@ -58,7 +59,12 @@ if (input) {
     }
 
     results.innerHTML = hits.map(item => {
-      const hi = (str) => str.replace(new RegExp(`(${q})`, 'gi'), '<mark>$1</mark>');
+      const hi = (str) => {
+        // Escapa caracteres especiais se houver (opcional mas seguro) e cria a regex multi-termo
+        const safeTerms = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        const pattern = new RegExp(`(${safeTerms.join('|')})`, 'gi');
+        return str.replace(pattern, '<mark>$1</mark>');
+      };
       return `<a class="search-result-item" href="${item.url}">
         <span class="result-title">${hi(item.title)}</span>
         <span class="result-section">${item.section}</span>
