@@ -76,9 +76,8 @@ Nessa situação, a interface mostra:
 - `Link mágico enviado! Verifique sua caixa de entrada.`
 - `Sessão validada`
 
-> **[CONFIRMAR COM BACKEND: TTL do link mágico]** — informar aqui por quanto tempo o link permanece
-> válido após o envio (ex: "O link expira em X minutos. Após esse prazo, solicite um novo link na
-> tela de login.").
+> O link mágico é válido por **15 minutos** e expira após o primeiro uso. 
+> Após esse prazo, solicite um novo link na tela de login.
 
 **Mensagens de atenção:**
 

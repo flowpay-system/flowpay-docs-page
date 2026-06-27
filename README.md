@@ -91,13 +91,4 @@ bundle exec jekyll serve
 # → http://localhost:4000
 ```
 
-## Pendências antes de publicar
 
-Dois placeholders precisam ser resolvidos com o backend antes da publicação pública:
-
-1.  `vendedor/acesso.md` — TTL do link mágico (linha com
-    `[CONFIRMAR COM BACKEND: TTL do link mágico]`)
-2.  `vendedor/checkout.md` — prazo de expiração do QR PIX (linha com
-    `[CONFIRMAR COM BACKEND: prazo de expiração do QR PIX]`)
-
-Substitua os blocos `> **[CONFIRMAR...]**` pelo prazo confirmado antes de fazer o deploy público.
