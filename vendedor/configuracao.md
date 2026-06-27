@@ -21,8 +21,8 @@ No dashboard, vá até a área `Financeiro` e localize o bloco `Chave PIX para r
 
 ## Cadastrar ou alterar a chave PIX
 
-1.  Digite a chave PIX
-2.  Clique em `Salvar`
+1. Digite a chave PIX
+2. Clique em `Salvar`
 
 Se já existir uma chave salva, o app exibe a chave ativa e oferece a opção `Alterar`.
 

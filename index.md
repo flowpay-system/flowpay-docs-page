@@ -36,15 +36,15 @@ Bem-vindo à documentação do FlowPay App. Escolha o seu perfil para começar.
 
 A sequência recomendada para novos vendedores:
 
-1.  [Criar e acessar sua conta]({{ "/vendedor/acesso" | relative_url }}) — cadastro em
-    flowpay.cash/registro e login via link mágico
-2.  [Configurar sua chave PIX]({{ "/vendedor/configuracao" | relative_url }}) — necessária antes de
-    solicitar saques
-3.  [Criar checkouts e receber pagamentos]({{ "/vendedor/checkout" | relative_url }}) — gerar links
-    e compartilhar com clientes
-4.  [Acompanhar métricas e transações]({{ "/vendedor/pagamentos" | relative_url }}) — dashboard
-    operacional
-5.  [Solicitar saque]({{ "/vendedor/saque" | relative_url }}) — transferência para sua chave PIX
+1. [Criar e acessar sua conta]({{ "/vendedor/acesso" | relative_url }}) — cadastro em
+   flowpay.cash/registro e login via link mágico
+2. [Configurar sua chave PIX]({{ "/vendedor/configuracao" | relative_url }}) — necessária antes de
+   solicitar saques
+3. [Criar checkouts e receber pagamentos]({{ "/vendedor/checkout" | relative_url }}) — gerar links e
+   compartilhar com clientes
+4. [Acompanhar métricas e transações]({{ "/vendedor/pagamentos" | relative_url }}) — dashboard
+   operacional
+5. [Solicitar saque]({{ "/vendedor/saque" | relative_url }}) — transferência para sua chave PIX
 
 ---
 

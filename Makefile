@@ -2,8 +2,8 @@ SHELL := /bin/sh
 
 PORT ?= 4000
 HOST ?= 127.0.0.1
-MD_GLOBS := "**/*.md"
-FMT_GLOBS := "**/*.{md,json,yml,yaml}"
+MD_GLOBS := "**/*.md" "\#_site" "\#vendor" "\#.jekyll-cache"
+FMT_GLOBS := "**/*.{md,json,yml,yaml}" "!_site" "!vendor" "!.jekyll-cache"
 RUBY_MIN := 3.0.0
 BUNDLER_MIN := 2.0.0
 CLEAN_PATHS := _site .jekyll-cache .jekyll-metadata .sass-cache .bundle vendor/bundle
@@ -19,6 +19,7 @@ help:
 		'make build         gera o site estatico em _site/' \
 		'make clean         remove artefatos de build e caches locais' \
 		'make lint          roda markdownlint nos .md' \
+		'make lint-fix      corrige automaticamente erros no markdownlint' \
 		'make format-check  valida formatacao com Prettier' \
 		'make format        aplica formatacao com Prettier' \
 		'make check         roda lint + format-check'
@@ -27,8 +28,8 @@ check-ruby:
 	@ruby -e 'required = Gem::Version.new("$(RUBY_MIN)"); current = Gem::Version.new(RUBY_VERSION); abort("Ruby >= $(RUBY_MIN) obrigatorio. Atual: #{RUBY_VERSION}. Instale Ruby 3.x antes de usar Jekyll.") if current < required; puts "Ruby OK: #{RUBY_VERSION}"'
 
 doctor: check-ruby check-bundler
-	@command -v npx >/dev/null 2>&1 || { echo "npx nao encontrado. Instale Node.js para lint e formatacao."; exit 1; }
-	@echo "npx OK"
+	@command -v pnpm >/dev/null 2>&1 || { echo "pnpm nao encontrado. Instale pnpm para lint e formatacao."; exit 1; }
+	@echo "pnpm OK"
 
 check: lint format-check
 
@@ -49,6 +50,9 @@ clean:
 
 lint:
 	pnpm dlx markdownlint-cli2 $(MD_GLOBS)
+
+lint-fix:
+	pnpm dlx markdownlint-cli2 --fix $(MD_GLOBS)
 
 format-check:
 	pnpm dlx prettier@3.8.1 --check $(FMT_GLOBS)

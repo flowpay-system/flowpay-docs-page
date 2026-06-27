@@ -33,9 +33,9 @@ Na área `Financeiro`, o app exibe:
 
 ## Solicitar saque
 
-1.  Confira o saldo disponível
-2.  Informe um valor (mínimo R$ 1,00) ou deixe em branco para sacar tudo
-3.  Clique em `Sacar agora`
+1. Confira o saldo disponível
+2. Informe um valor (mínimo R$ 1,00) ou deixe em branco para sacar tudo
+3. Clique em `Sacar agora`
 
 Antes do envio, o sistema mostra uma previsão com:
 

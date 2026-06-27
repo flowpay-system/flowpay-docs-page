@@ -17,3 +17,7 @@ CORRECOES_CRITICAS.md
 PRIVACY.md
 TERMS.md
 
+# Build output and caches
+_site/
+.jekyll-cache/
+vendor/
