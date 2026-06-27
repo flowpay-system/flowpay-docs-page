@@ -17,10 +17,10 @@ clientes.
 
 No bloco `Novo link`, preencha:
 
-1.  `Título`
-2.  `Descrição`
-3.  `Valor em BRL`
-4.  método de pagamento
+1. `Título`
+2. `Descrição`
+3. `Valor em BRL`
+4. método de pagamento
 
 Atualmente, o flow principal é `PIX`.
 
@@ -36,9 +36,9 @@ Atualmente, o flow principal é `PIX`.
 
 ### Gerar o link
 
-1.  Preencha os campos
-2.  Clique em `Gerar link`
-3.  Aguarde a confirmação do sistema
+1. Preencha os campos
+2. Clique em `Gerar link`
+3. Aguarde a confirmação do sistema
 
 Depois disso, o app exibe:
 
@@ -69,12 +69,12 @@ O checkout público fica em uma rota como `/checkout/{button_id}`.
 
 Esse é o flow que o cliente percorre:
 
-1.  abre o link
-2.  informa nome
-3.  informa e-mail
-4.  clica em `Gerar PIX`
-5.  copia o código PIX ou usa o QR Code
-6.  aguarda a confirmação do pagamento
+1. abre o link
+2. informa nome
+3. informa e-mail
+4. clica em `Gerar PIX`
+5. copia o código PIX ou usa o QR Code
+6. aguarda a confirmação do pagamento
 
 ### O que o checkout mostra para o cliente
 
@@ -85,8 +85,8 @@ Depois da geração do PIX, o checkout mostra:
 - status da cobrança
 - contagem regressiva quando houver expiração
 
-> O QR Code PIX tem tempo limitado de uso e expira em **30 minutos**.
-> Após a expiração, o cliente deve retornar ao checkout e gerar um novo QR Code.
+> O QR Code PIX tem tempo limitado de uso e expira em **30 minutos**. Após a expiração, o cliente
+> deve retornar ao checkout e gerar um novo QR Code.
 
 ---
 

@@ -45,7 +45,8 @@ No repositório → **Settings** → **Pages**:
 
 ### 3. Ajustar o `_config.yml`
 
-Se o site não estiver na raiz do domínio (ex: `flowpay-system.github.io/flowpay-docs-page`), adicione:
+Se o site não estiver na raiz do domínio (ex: `flowpay-system.github.io/flowpay-docs-page`),
+adicione:
 
 ```yaml
 baseurl: '/flowpay-docs-page'

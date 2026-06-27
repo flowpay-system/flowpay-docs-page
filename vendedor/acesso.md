@@ -4,9 +4,8 @@ title: Acessar a conta
 section: Vendedor
 ---
 
-<span class="page-badge vendor">Vendedor · Etapa 01</span>
-
-# Acessar a conta
+<span class="page-badge vendor">
+Vendedor · Etapa 01</span>
 
 O acesso ao FlowPay App é exclusivo para contas aprovadas. O flow começa no cadastro externo e
 termina no login via link mágico.
@@ -17,11 +16,11 @@ termina no login via link mágico.
 
 Para criar sua conta:
 
-1.  Acesse `https://flowpay.cash/registro` (site externo ao app)
-2.  Preencha o formulário de cadastro e envie
-3.  Sua conta entra em análise após o envio
-4.  O acesso ao painel só é liberado após aprovação
-5.  Quando aprovado, você recebe instruções para acessar via link mágico
+1. Acesse `https://flowpay.cash/registro` (site externo ao app)
+2. Preencha o formulário de cadastro e envie
+3. Sua conta entra em análise após o envio
+4. O acesso ao painel só é liberado após aprovação
+5. Quando aprovado, você recebe instruções para acessar via link mágico
 
 Enquanto a análise estiver em andamento, não é possível acessar o dashboard do app.
 
@@ -31,12 +30,12 @@ Enquanto a análise estiver em andamento, não é possível acessar o dashboard 
 
 O acesso do vendedor é feito por link mágico enviado para o e-mail aprovado.
 
-1.  Acesse `https://app.flowpay.cash/login`
-2.  Digite seu e-mail aprovado
-3.  Clique em `Receber link mágico`
-4.  Abra o e-mail recebido
-5.  Clique no link de acesso
-6.  Aguarde a validação automática da sessão
+1. Acesse `https://app.flowpay.cash/login`
+2. Digite seu e-mail aprovado
+3. Clique em `Receber link mágico`
+4. Abra o e-mail recebido
+5. Clique no link de acesso
+6. Aguarde a validação automática da sessão
 
 Depois da validação, o app redireciona você para o `Dashboard`.
 
@@ -76,8 +75,8 @@ Nessa situação, a interface mostra:
 - `Link mágico enviado! Verifique sua caixa de entrada.`
 - `Sessão validada`
 
-> O link mágico é válido por **15 minutos** e expira após o primeiro uso.
-> Após esse prazo, solicite um novo link na tela de login.
+> O link mágico é válido por **15 minutos** e expira após o primeiro uso. Após esse prazo, solicite
+> um novo link na tela de login.
 
 **Mensagens de atenção:**
 
