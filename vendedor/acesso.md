@@ -76,7 +76,7 @@ Nessa situação, a interface mostra:
 - `Link mágico enviado! Verifique sua caixa de entrada.`
 - `Sessão validada`
 
-> O link mágico é válido por **15 minutos** e expira após o primeiro uso. 
+> O link mágico é válido por **15 minutos** e expira após o primeiro uso.
 > Após esse prazo, solicite um novo link na tela de login.
 
 **Mensagens de atenção:**

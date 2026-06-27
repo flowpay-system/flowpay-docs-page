@@ -85,7 +85,7 @@ Depois da geração do PIX, o checkout mostra:
 - status da cobrança
 - contagem regressiva quando houver expiração
 
-> O QR Code PIX tem tempo limitado de uso e expira em **30 minutos**. 
+> O QR Code PIX tem tempo limitado de uso e expira em **30 minutos**.
 > Após a expiração, o cliente deve retornar ao checkout e gerar um novo QR Code.
 
 ---
